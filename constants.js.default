@@ -1,8 +1,8 @@
 module.exports = {
-    answer: 'Würden Sie es mir übel nehmen, sollte ich Sie darum bitten Ihre Fresse zu halten?',
+    answer: 'Bye.',
     banTime: 10, // seconds
-    invitationText: 'Hier könnte Ihre Werbung stehen.', // TODO: make invitation dependent on group being banned from
+    invitationText: 'Follow this link:' + process.env.GeulhornInvite, // TODO: make invitation dependent on group being banned from
     logSize: 64,
     threshold: 2,
-    token: process.env.TOKEN,
+    token: process.env.GeulhornToken,
 };
