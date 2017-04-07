@@ -1,6 +1,9 @@
-### AutoKick ###
+### Geulhorn ###
 # Credentials #
 constants.js
+
+# Bot Design #
+design/
 
 # Created by https://www.gitignore.io/api/node,linux,visualstudiocode,kate
 
