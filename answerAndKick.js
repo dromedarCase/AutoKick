@@ -18,9 +18,6 @@ module.exports = function answerAndKick(msg, answer) {
         console.log(chalk.red(logSymbols.error, error));
         return;
     });
-    
-    // user was successfully kicked
-    this.messageLog.addBanned(msg.from.id);
 
     // TODO: externalize the following function
     timers.setTimeout(
