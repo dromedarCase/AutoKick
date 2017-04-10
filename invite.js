@@ -3,13 +3,12 @@ module.exports = function (msg) {
         userInGroup = false;
         for (message in this.messageLog.messages)
         {
-            console.log(message.from.id)
-            console.log(msg.from.id)
-            console.log(message.chat.title)
-            console.log(group)
-            console.log()
-            if (message.from.id == msg.from.id && message.chat.title == group)
-                userInGroup = true;
+            try {
+                if (this.messageLog.messages[message].from.id == msg.from.id && this.messageLog.messages[message].chat.title == group)
+                    userInGroup = true;
+            } catch (ex) {
+                console.log("message not readable");
+            }
         }
         if (userInGroup)
             this.sendMessage(msg.chat.id, this.constants.invitationText[group]).catch(
