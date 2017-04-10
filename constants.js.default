@@ -1,7 +1,11 @@
 module.exports = {
     answer: 'Bye.',
     banTime: 10, // seconds
-    invitationText: 'Follow this link:' + process.env.GeulhornInvite, // TODO: make invitation dependent on group being banned from
+    invitationText: {
+        process.env.GeulhornGroup: 'Follow this link:' + process.env.GeulhornInvite,
+        "Another Group": "Enter using this link: [LINK]",
+        // list is expandable
+    }
     logSize: 64,
     threshold: 2,
     token: process.env.GeulhornToken,
