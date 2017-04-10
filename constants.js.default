@@ -2,7 +2,7 @@ module.exports = {
     answer: 'Bye.',
     banTime: 10, // seconds
     invitationText: {
-        process.env.GeulhornGroup: 'Follow this link:' + process.env.GeulhornInvite,
+        "My Group": 'Follow this link:' + process.env.GeulhornInvite,
         "Another Group": "Enter using this link: [LINK]",
         // list is expandable
     }
