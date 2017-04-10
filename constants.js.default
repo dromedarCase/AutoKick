@@ -5,7 +5,7 @@ module.exports = {
         "My Group": 'Follow this link:' + process.env.GeulhornInvite,
         "Another Group": "Enter using this link: [LINK]",
         // list is expandable
-    }
+    },
     logSize: 64,
     threshold: 2,
     token: process.env.GeulhornToken,
