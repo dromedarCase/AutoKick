@@ -13,7 +13,7 @@ module.exports = function () {
                 count[msg.text] = (count[msg.text] || 0) + 1;
             });
             if(count[msg.text] >= this.constants.threshold) {
-                //this.answerAndKick(msg, this.constants.answer);
+                this.answerAndKick(msg, this.constants.answer);
             }
         }
     });
